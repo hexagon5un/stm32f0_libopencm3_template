@@ -7,11 +7,17 @@ What I've done here is to take a single bit of example code (miniblink) and incl
 ## Installation Instructions
 
 1) Clone this repo
+
 2) `git submodule init && git submodule update` to pull down the libopencm3 library
+
 3) `cd libopencm3 && make && cd ..` to build libopencm3
+
 4) `make` should build you the project at that point -- see what happens.
+
 5) You can burn the firmware directly to your chip using `make miniblink.stlink-flash` if you've got an ST-link hooked up
+
 6) When this fails to blink, check to make sure that your LEDs are hooked up as the code expects: look for GPIOxx and change it.
+
 7) Get hacking.  You've got better things to do than blink lights!
 
 
